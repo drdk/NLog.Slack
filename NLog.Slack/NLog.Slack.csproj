@@ -1,30 +1,35 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
-  <PropertyGroup>
-    <TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
+	<PropertyGroup>
+		<TargetFrameworks>net45;netstandard2.0</TargetFrameworks>
 
-    <Title>DR.NLog.Slack</Title>
-    <Description>NLog target for Slack - your logs in one place and instantly searchable, everywhere. (forked from https://github.com/eth0izzle/NLog.Slack)</Description>
-    <Authors>DR TU - MedieAPI Team</Authors>
-    <Company>DR (Danish Broadcasting Corporation)</Company>
-    <CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
+		<Title>DR.NLog.Slack</Title>
+		<Description>NLog target for Slack - your logs in one place and instantly searchable, everywhere. (forked from https://github.com/eth0izzle/NLog.Slack)</Description>
+		<Authors>DR TU - MedieAPI Team</Authors>
+		<Company>DR (Danish Broadcasting Corporation)</Company>
+		<CurrentYear>$([System.DateTime]::Now.ToString(yyyy))</CurrentYear>
 
-    <PackageTags>NLog;slack;log;logging</PackageTags>
-    <PackageProjectUrl>https://github.com/drdk/NLog.Slack</PackageProjectUrl>
-    <PackageLicenseUrl>https://github.com/drdk/NLog.Slack/blob/master/LICENSE.md</PackageLicenseUrl>
-    <PackageIconUrl>https://raw.githubusercontent.com/drdk/NLog.Slack/master/nuget.png</PackageIconUrl>
-    <RepositoryType>git</RepositoryType>
-    <RepositoryUrl>https://github.com/drdk/NLog.Slack.git</RepositoryUrl>
+		<PackageTags>NLog;slack;log;logging</PackageTags>
+		<PackageProjectUrl>https://github.com/drdk/NLog.Slack</PackageProjectUrl>
+		<PackageLicenseUrl>https://github.com/drdk/NLog.Slack/blob/master/LICENSE.md</PackageLicenseUrl>
+		<PackageIconUrl>https://raw.githubusercontent.com/drdk/NLog.Slack/master/nuget.png</PackageIconUrl>
+		<RepositoryType>git</RepositoryType>
+		<RepositoryUrl>https://github.com/drdk/NLog.Slack.git</RepositoryUrl>
 
-    <Version>2.0.1</Version>
+		<Version>2.0.1</Version>
+		<AssemblyVersion>2.0.1</AssemblyVersion>
 
-    <AssemblyVersion>2.0.1</AssemblyVersion>
+		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
+		<DebugSymbols>true</DebugSymbols>
+		<EmbedAllSources>True</EmbedAllSources>
+		<DebugType>embedded</DebugType>
+		<IncludeSource>true</IncludeSource>
+		<IncludeSymbols>true</IncludeSymbols>
+		<GenerateDocumentationFile>true</GenerateDocumentationFile>
+	</PropertyGroup>
 
-    <AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
-  </PropertyGroup>
-
-  <ItemGroup>
-    <PackageReference Include="NLog" Version="4.5.11" />
-  </ItemGroup>
+	<ItemGroup>
+		<PackageReference Include="NLog" Version="4.5.11" />
+	</ItemGroup>
 
 </Project>
