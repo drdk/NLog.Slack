@@ -16,8 +16,8 @@
 		<RepositoryType>git</RepositoryType>
 		<RepositoryUrl>https://github.com/drdk/NLog.Slack.git</RepositoryUrl>
 
-		<Version>2.0.1</Version>
-		<AssemblyVersion>2.0.1</AssemblyVersion>
+		<Version>2.0.2</Version>
+		<AssemblyVersion>2.0.2</AssemblyVersion>
 
 		<AutoGenerateBindingRedirects>false</AutoGenerateBindingRedirects>
 		<DebugSymbols>true</DebugSymbols>
