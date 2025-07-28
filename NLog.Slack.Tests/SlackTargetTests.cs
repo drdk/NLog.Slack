@@ -1,5 +1,4 @@
 using System;
-using FluentAssertions;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace NLog.Slack.Tests
@@ -12,8 +11,8 @@ namespace NLog.Slack.Tests
         {
             var slackTarget = new TestableSlackTarget();
 
-            slackTarget.Compact.Should().Be(false);
-            slackTarget.WebHookUrl.Should().Be(null);
+            Assert.IsFalse(slackTarget.Compact);
+            Assert.IsNull(slackTarget.WebHookUrl);
         }
 
         [TestMethod]
@@ -30,8 +29,8 @@ namespace NLog.Slack.Tests
 
             var logEvent = new LogEventInfo { Level = LogLevel.Info, Message = "This is a ${level} message" };
 
-            slackTarget.Compact.Should().Be(compact);
-            slackTarget.WebHookUrl.Should().Be(webHookUrl);
+            Assert.AreEqual(slackTarget.Compact, compact);
+            Assert.AreEqual(slackTarget.WebHookUrl, webHookUrl);
         }
 
         [TestMethod, ExpectedException(typeof(ArgumentOutOfRangeException))]
