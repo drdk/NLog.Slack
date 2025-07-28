@@ -9,14 +9,14 @@ on:
 
 jobs:
   build:
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     defaults:
       run:
         working-directory: .
     name: Update NuGet package
     env:
         PACKAGE_PROJECT: NLog.Slack
-        TEST_PROJECT:
+        TEST_PROJECT: NLog.Slack.Tests
     steps:
 
       - name: Checkout repository
